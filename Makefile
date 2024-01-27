@@ -6,7 +6,7 @@
 #    By: roglopes <roglopes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/03 14:14:55 by roglopes          #+#    #+#              #
-#    Updated: 2024/01/27 17:53:31 by roglopes         ###   ########.fr        #
+#    Updated: 2024/01/27 17:59:55 by roglopes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ OBJS_C_BONUS	:= ${C_SOURCES_BONUS:sources/bonus/%.c=$(OBJECTS_BONUS)%.o}
 
 LIBFT			:= ./libft/sources/libft.a
 
-CFLAGS			:= -Wextra -Wall -Werror -g3
+CFLAGS			:= -Wextra -Wall -g3
 CC				:= cc
 
 COUNT			:= 0
