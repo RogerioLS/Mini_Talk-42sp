@@ -8,6 +8,6 @@ jobs:
       steps:
         - uses: actions/checkout@v2
         - name: make
-          rum: make
+          run: make
         - name: make bonus
-          rum: make bonus
+          run: make bonus
