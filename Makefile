@@ -6,7 +6,7 @@
 #    By: roglopes <roglopes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/03 14:14:55 by roglopes          #+#    #+#              #
-#    Updated: 2024/01/25 15:00:22 by roglopes         ###   ########.fr        #
+#    Updated: 2024/01/27 17:53:31 by roglopes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ OBJS_C			:= ${C_SOURCES:sources/mandatory/%.c=$(OBJECTS)%.o}
 OBJS_S_BONUS	:= ${S_SOURCES_BONUS:sources/bonus/%.c=$(OBJECTS_BONUS)%.o}
 OBJS_C_BONUS	:= ${C_SOURCES_BONUS:sources/bonus/%.c=$(OBJECTS_BONUS)%.o}
 
-LIBFT			:= ./libft/library/libft.a
+LIBFT			:= ./libft/sources/libft.a
 
 CFLAGS			:= -Wextra -Wall -Werror -g3
 CC				:= cc
