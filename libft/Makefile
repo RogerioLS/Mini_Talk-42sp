@@ -6,11 +6,11 @@
 #    By: roglopes <roglopes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/22 22:11:31 by roglopes          #+#    #+#              #
-#    Updated: 2024/01/27 17:45:45 by roglopes         ###   ########.fr        #
+#    Updated: 2024/01/27 17:52:22 by roglopes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= ./library/libft.a
+NAME		= ./sources/libft.a
 
 SOURCES		= ft_isalpha.c \
 			ft_isdigit.c   \
@@ -67,10 +67,10 @@ SOURCES_B	= ft_lstnew_bonus.c    \
 INCLUDES	= ./include/
 
 SOURCES		:= $(addprefix ./sources/,$(SOURCES))
-OBJECTS		= $(SOURCES:./sources/%.c=./objects/%.o)
+OBJECTS		= $(SOURCES:./sources/%.c=./sources/%.o)
 
 SOURCES_B	:= $(addprefix ./sources/,$(SOURCES_B))
-OBJECTS_B	= $(SOURCES_B:./sources/%.c=./objects/%.o)
+OBJECTS_B	= $(SOURCES_B:./sources/%.c=./sources/%.o)
 
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror
@@ -90,7 +90,7 @@ $(NAME): $(OBJECTS)
 
 bonus: $(OBJECTS_B)
 
-./objects/%.o: ./sources/%.c
+./sources/%.o: ./sources/%.c
 	@$(eval COUNT=$(shell expr $(COUNT) + 1))
 	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INCLUDES)
 	@ar rcs $(NAME) $@
