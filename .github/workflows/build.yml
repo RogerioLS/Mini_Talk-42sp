@@ -1,0 +1,13 @@
+name: Build and Compilation
+on: [push]
+
+jobs:
+  build:
+      name: Build and Compilation
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: make
+          rum: make
+        - name: make bonus
+          rum: make bonus
